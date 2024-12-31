@@ -1,0 +1,26 @@
+spring:
+  application.name: meet-finder
+  jpa:
+    hibernate.ddl-auto: validate
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    properties:
+      schema: public
+  flyway:
+    url: jdbc:postgresql://localhost:5432/postgres
+    user: postgres
+    password: postgres
+    baseline-on-migrate: true
+    default-schema: public
+
+
+partner:
+  postback-params:
+    clickId: cid
+    eventId: eid
+    status: status
+    traderId: trader
+    registration: reg
+    fistReplenishment: ftd
